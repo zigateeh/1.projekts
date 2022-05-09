@@ -11,5 +11,23 @@
     <p>Uzklikšķini uz pirmās bildes, pēctam uz otras, tā tu uzzināsi kāds ir tavs reakcijas laiks.</p>
     <p>Tavs laiks:<span id="tavslaiks">te būs redzams tavs laiks</span></p>
     <div id="attēls" style="position: absolute"></div>
+
+    <script>
+        var sakums;//piefiksē sākuma laiku//
+        var beigas;//piefiksē beigu laiku//
+        var bilde=document.getElementById("attels");//JS piesaistu div kastei ar ID=attels
+        var game=false;//definēts mainīgais game, kas saka, ka spēle sākumā nenotiek
+
+        //f-ja, kas nejaušā punktā parāda attēlu pārlūkprogrammas logā
+        function paradies(){
+            var top=Math.random()*150;//nejauši izvēlas attēla y koordināti
+            var left=Math.random()*400;//nejuaši izvēlas attēla x koordināti
+
+            document.getElementById("attels").style.top=top+"px";
+            document.getElementById("attels").style.left=left+"px";
+            document.getElementById("attels").style.backgroundColor="red";
+
+        }
+    </script>
 </body>
 </html>
