@@ -10,7 +10,7 @@
     <h1>Cik ātrs tu esi?</h1>
     <p>Uzklikšķini uz pirmās bildes, pēctam uz otras, tā tu uzzināsi kāds ir tavs reakcijas laiks.</p>
     <p>Tavs laiks:<span id="tavslaiks">te būs redzams tavs laiks</span></p>
-    <div id="attēls" style="position: absolute"></div>
+    <div id="attels" style="position: absolute background-color:red;"></div>
 
     <script>
         var sakums;//piefiksē sākuma laiku//
@@ -26,8 +26,10 @@
             document.getElementById("attels").style.top=top+"px";
             document.getElementById("attels").style.left=left+"px";
             document.getElementById("attels").style.backgroundColor="red";
-
+            document.getElementById("attels").style.display="block";
+            console.log("hey!");
         }
+        paradies();
     </script>
 </body>
 </html>
